@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>เขาหลวงทรัพยากรมากมี | SIRIN Museum</title>
+    <link rel="stylesheet" href="zone-page.css">
+    <style>
+        :root {
+            --hero-image: url('zone3thumbnail.jpg');
+            --room-image: url('zone3.jpg')
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav"><a href="Sirinmuseum.html" class="logo">
+                <div class="logo-mark"><img src="SirinLogo.png" alt="SIRIN Museum"></div>
+                <div><b>SIRIN MUSEUM</b><span>พิพิธภัณฑ์ธรรมชาติวิทยาเทพรัตนราชสุดาฯ</span></div>
+            </a>
+            <ul class="menu">
+                <li><a href="Sirinmuseum.html#about">เกี่ยวกับเรา</a></li>
+                <li><a href="Sirinmuseum.html#zones">โซนจัดแสดง</a></li>
+                <li><a href="Sirinmuseum.html#visit">ข้อมูลเข้าชม</a></li>
+                <li><a href="Sirinmuseum.html#contact">ติดต่อ</a></li>
+            </ul><button class="burger">☰</button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-inner"><span class="hero-no">03</span>
+                <p class="eyebrow">Exhibition Room · SIRIN Museum</p>
+                <h1>เขาหลวงทรัพยากรมากมี</h1>
+                <p>ความหลากหลายทางชีวภาพของเทือกเขาหลวง ผ่านแบบจำลองน้ำตกกรุงชิงและตัวอย่างพืชสัตว์</p><a
+                    class="btn btn-primary" href="#story">สำรวจเรื่องราว</a>
+            </div>
+        </section>
+        <section class="intro">
+            <div class="container intro-grid">
+                <div>
+                    <p class="section-label">Khao Luang Biodiversity</p>
+                    <h2>เทือกเขาหลวง แหล่งชีวิตและความหลากหลาย</h2>
+                    <p>สัมผัสระบบนิเวศของเทือกเขาหลวง ตั้งแต่ป่าต้นน้ำจนถึงลำธารและน้ำตกกรุงชิง
+                        ผ่านการจำลองภูมิประเทศและสื่อจัดแสดงที่เห็นภาพ</p>
+                    <p>ทำความรู้จักพืชและสัตว์ที่พบในพื้นที่
+                        และเข้าใจว่าทุกองค์ประกอบของผืนป่าล้วนเชื่อมโยงกันเป็นระบบเดียว</p>
+                    <div class="facts">
+                        <div class="fact"><b>เขาหลวง</b><span>ผืนป่าสำคัญ</span></div>
+                        <div class="fact"><b>กรุงชิง</b><span>น้ำตกต้นแบบ</span></div>
+                        <div class="fact"><b>Bio</b><span>ความหลากหลาย</span></div>
+                    </div>
+                </div>
+                <div class="room-image"></div>
+            </div>
+        </section>
+        <section class="story" id="story">
+            <div class="container story-inner">
+                <div class="divider"></div>
+                <p class="section-label">Mountain Ecosystem</p>
+                <h2>หนึ่งผืนป่า หลายชีวิตที่พึ่งพากัน</h2>
+                <p>เทือกเขาหลวงเป็นทั้งบ้านของสิ่งมีชีวิตและแหล่งต้นน้ำ
+                    การอนุรักษ์จึงต้องดูแลทุกความสัมพันธ์ภายในระบบนิเวศ</p>
+                <div class="timeline">
+                    <div class="timeline-item"><b>ต้นน้ำ</b><span>เห็นความสำคัญของป่าและสายน้ำ</span></div>
+                    <div class="timeline-item"><b>หลากหลาย</b><span>สำรวจพืชและสัตว์ในเทือกเขาหลวง</span></div>
+                    <div class="timeline-item"><b>ร่วมรักษา</b><span>ปกป้องระบบนิเวศให้คงอยู่</span></div>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="container">
+                <h2>ออกเดินทางสู่โซนจัดแสดงอื่น</h2>
+                <p>เรื่องราวธรรมชาติวิทยาของภาคใต้ยังรอให้คุณค้นพบ</p>
+                <div class="page-nav"><a href="zone-02.html">← โซนก่อนหน้า</a><a
+                        href="Sirinmuseum.html#zones">โซนทั้งหมด</a><a href="zone-04.html">โซนถัดไป →</a></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">© 2026 SIRIN Museum, Walailak University.</div>
+    </footer>
+    <script>const menu = document.querySelector('.menu'); document.querySelector('.burger').onclick = () => menu.classList.toggle('open'); menu.querySelectorAll('a').forEach(a => a.onclick = () => menu.classList.remove('open'));</script>
+</body>
+
+</html>

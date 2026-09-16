@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>หวนดูทรัพย์สิ่งสินตน | SIRIN Museum</title>
+    <link rel="stylesheet" href="zone-page.css">
+    <style>
+        :root {
+            --hero-image: url('zone2thumbnail.jpg');
+            --room-image: url('zone2.jpg')
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav"><a href="Sirinmuseum.html" class="logo">
+                <div class="logo-mark"><img src="SirinLogo.png" alt="SIRIN Museum"></div>
+                <div><b>SIRIN MUSEUM</b><span>พิพิธภัณฑ์ธรรมชาติวิทยาเทพรัตนราชสุดาฯ</span></div>
+            </a>
+            <ul class="menu">
+                <li><a href="Sirinmuseum.html#about">เกี่ยวกับเรา</a></li>
+                <li><a href="Sirinmuseum.html#zones">โซนจัดแสดง</a></li>
+                <li><a href="Sirinmuseum.html#visit">ข้อมูลเข้าชม</a></li>
+                <li><a href="Sirinmuseum.html#contact">ติดต่อ</a></li>
+            </ul><button class="burger">☰</button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-inner"><span class="hero-no">02</span>
+                <p class="eyebrow">Exhibition Room · SIRIN Museum</p>
+                <h1>หวนดูทรัพย์สิ่งสินตน</h1>
+                <p>ทรัพยากรถิ่นใต้ งานวิจัย งานสนองพระราชดำริ ศิลปะ วัฒนธรรม และภูมิปัญญา</p><a class="btn btn-primary"
+                    href="#story">สำรวจเรื่องราว</a>
+            </div>
+        </section>
+        <section class="intro">
+            <div class="container intro-grid">
+                <div>
+                    <p class="section-label">Southern Heritage</p>
+                    <h2>ทรัพย์สินของถิ่นใต้ที่ควรรู้คุณค่า</h2>
+                    <p>สำรวจทรัพยากรท้องถิ่นของภาคใต้ ผ่านฐานข้อมูล งานวิจัย
+                        และโครงการสนองพระราชดำริที่รวบรวมองค์ความรู้จากชุมชนและนักวิชาการ</p>
+                    <p>เรียนรู้ความสัมพันธ์ระหว่างศิลปวัฒนธรรม ภูมิปัญญา และทรัพยากรธรรมชาติ
+                        เพื่อมองเห็นคุณค่าของสิ่งใกล้ตัวในมุมใหม่</p>
+                    <div class="facts">
+                        <div class="fact"><b>ภาคใต้</b><span>แหล่งทรัพยากร</span></div>
+                        <div class="fact"><b>ฐานข้อมูล</b><span>องค์ความรู้</span></div>
+                        <div class="fact"><b>ภูมิปัญญา</b><span>มรดกท้องถิ่น</span></div>
+                    </div>
+                </div>
+                <div class="room-image"></div>
+            </div>
+        </section>
+        <section class="story" id="story">
+            <div class="container story-inner">
+                <div class="divider"></div>
+                <p class="section-label">Local Knowledge</p>
+                <h2>เมื่อภูมิปัญญากลายเป็นพลังของการอนุรักษ์</h2>
+                <p>องค์ความรู้ที่สั่งสมในท้องถิ่นช่วยให้เราใช้ทรัพยากรอย่างเหมาะสม
+                    และสร้างแนวทางดูแลธรรมชาติที่สอดคล้องกับวิถีชีวิต</p>
+                <div class="timeline">
+                    <div class="timeline-item"><b>สำรวจ</b><span>รู้จักทรัพยากรและเรื่องราวของถิ่นใต้</span></div>
+                    <div class="timeline-item"><b>เรียนรู้</b><span>เชื่อมโยงงานวิจัยกับภูมิปัญญาชุมชน</span></div>
+                    <div class="timeline-item"><b>สืบสาน</b><span>ส่งต่อความรู้ให้เกิดประโยชน์</span></div>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="container">
+                <h2>ออกเดินทางสู่โซนจัดแสดงอื่น</h2>
+                <p>เรื่องราวธรรมชาติวิทยาของภาคใต้ยังรอให้คุณค้นพบ</p>
+                <div class="page-nav"><a href="zone-01.html">← โซนก่อนหน้า</a><a
+                        href="Sirinmuseum.html#zones">โซนทั้งหมด</a><a href="zone-03.html">โซนถัดไป →</a></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">© 2026 SIRIN Museum, Walailak University.</div>
+    </footer>
+    <script>const menu = document.querySelector('.menu'); document.querySelector('.burger').onclick = () => menu.classList.toggle('open'); menu.querySelectorAll('a').forEach(a => a.onclick = () => menu.classList.remove('open'));</script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ทรัพยากรลุ่มน้ำปากพนัง | SIRIN Museum</title>
+    <link rel="stylesheet" href="zone-page.css">
+    <style>
+        :root {
+            --hero-image: url('zone5thumbnail.jpg');
+            --room-image: url('zone5.jpg')
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav"><a href="Sirinmuseum.html" class="logo">
+                <div class="logo-mark"><img src="SirinLogo.png" alt="SIRIN Museum"></div>
+                <div><b>SIRIN MUSEUM</b><span>พิพิธภัณฑ์ธรรมชาติวิทยาเทพรัตนราชสุดาฯ</span></div>
+            </a>
+            <ul class="menu">
+                <li><a href="Sirinmuseum.html#about">เกี่ยวกับเรา</a></li>
+                <li><a href="Sirinmuseum.html#zones">โซนจัดแสดง</a></li>
+                <li><a href="Sirinmuseum.html#visit">ข้อมูลเข้าชม</a></li>
+                <li><a href="Sirinmuseum.html#contact">ติดต่อ</a></li>
+            </ul><button class="burger">☰</button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-inner"><span class="hero-no">05</span>
+                <p class="eyebrow">Exhibition Room · SIRIN Museum</p>
+                <h1>ทรัพยากรลุ่มน้ำปากพนัง</h1>
+                <p>ความสัมพันธ์ของสายน้ำ พื้นที่ชุ่มน้ำ และทรัพยากรในลุ่มน้ำปากพนัง</p><a class="btn btn-primary"
+                    href="#story">สำรวจเรื่องราว</a>
+            </div>
+        </section>
+        <section class="intro">
+            <div class="container intro-grid">
+                <div>
+                    <p class="section-label">Pak Phanang Basin</p>
+                    <h2>สายน้ำที่หล่อเลี้ยงผู้คนและผืนดิน</h2>
+                    <p>ลุ่มน้ำปากพนังเชื่อมโยงป่า น้ำ ชุมชน และอาชีพเข้าด้วยกัน
+                        ห้องนี้ชวนทำความเข้าใจคุณค่าของทรัพยากรในลุ่มน้ำอย่างเป็นระบบ</p>
+                    <p>เรียนรู้การจัดการน้ำและการอยู่ร่วมกับธรรมชาติ เพื่อให้พื้นที่ยังคงหล่อเลี้ยงผู้คนได้ในระยะยาว</p>
+                    <div class="facts">
+                        <div class="fact"><b>ลุ่มน้ำ</b><span>ระบบนิเวศ</span></div>
+                        <div class="fact"><b>ชุมชน</b><span>วิถีชีวิต</span></div>
+                        <div class="fact"><b>สมดุล</b><span>การจัดการน้ำ</span></div>
+                    </div>
+                </div>
+                <div class="room-image"></div>
+            </div>
+        </section>
+        <section class="story" id="story">
+            <div class="container story-inner">
+                <div class="divider"></div>
+                <p class="section-label">Water Connects Us</p>
+                <h2>ทุกสายน้ำเชื่อมโยงถึงกัน</h2>
+                <p>การดูแลลุ่มน้ำเป็นความร่วมมือของทุกคนที่อยู่ต้นน้ำ กลางน้ำ และปลายน้ำ</p>
+                <div class="timeline">
+                    <div class="timeline-item"><b>ต้นทาง</b><span>เข้าใจเส้นทางของน้ำและป่า</span></div>
+                    <div class="timeline-item"><b>ระหว่างทาง</b><span>เห็นความสัมพันธ์กับผู้คน</span></div>
+                    <div class="timeline-item"><b>ปลายทาง</b><span>ร่วมรักษาสมดุลของลุ่มน้ำ</span></div>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="container">
+                <h2>ออกเดินทางสู่โซนจัดแสดงอื่น</h2>
+                <p>เรื่องราวธรรมชาติวิทยาของภาคใต้ยังรอให้คุณค้นพบ</p>
+                <div class="page-nav"><a href="zone-04.html">← โซนก่อนหน้า</a><a
+                        href="Sirinmuseum.html#zones">โซนทั้งหมด</a><a href="zone-06.html">โซนถัดไป →</a></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">© 2026 SIRIN Museum, Walailak University.</div>
+    </footer>
+    <script>const menu = document.querySelector('.menu'); document.querySelector('.burger').onclick = () => menu.classList.toggle('open'); menu.querySelectorAll('a').forEach(a => a.onclick = () => menu.classList.remove('open'));</script>
+</body>
+
+</html>

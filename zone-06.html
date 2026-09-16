@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ชายฝั่งอุดมสมบูรณ์ | SIRIN Museum</title>
+    <link rel="stylesheet" href="zone-page.css">
+    <style>
+        :root {
+            --hero-image: url('zone6thumbnail.jpg');
+            --room-image: url('zone6.jpg')
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav"><a href="Sirinmuseum.html" class="logo">
+                <div class="logo-mark"><img src="SirinLogo.png" alt="SIRIN Museum"></div>
+                <div><b>SIRIN MUSEUM</b><span>พิพิธภัณฑ์ธรรมชาติวิทยาเทพรัตนราชสุดาฯ</span></div>
+            </a>
+            <ul class="menu">
+                <li><a href="Sirinmuseum.html#about">เกี่ยวกับเรา</a></li>
+                <li><a href="Sirinmuseum.html#zones">โซนจัดแสดง</a></li>
+                <li><a href="Sirinmuseum.html#visit">ข้อมูลเข้าชม</a></li>
+                <li><a href="Sirinmuseum.html#contact">ติดต่อ</a></li>
+            </ul><button class="burger">☰</button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-inner"><span class="hero-no">06</span>
+                <p class="eyebrow">Exhibition Room · SIRIN Museum</p>
+                <h1>ชายฝั่งอุดมสมบูรณ์</h1>
+                <p>จากวิถีชายฝั่งสู่งานวิจัยเพื่อความยั่งยืน</p><a class="btn btn-primary"
+                    href="#story">สำรวจเรื่องราว</a>
+            </div>
+        </section>
+        <section class="intro">
+            <div class="container intro-grid">
+                <div>
+                    <p class="section-label">Coastal Geology</p>
+                    <h2>ชายฝั่งอุดมสมบูรณ์</h2>
+                    <p>สัมผัสการจำลองระบบนิเวศป่าชายหาดและป่าชายเลนผ่านสื่อผสมและวัตถุจัดแสดงจริง </p>
+                    <p>สำรวจความหลากหลายของพืชและสัตว์ พร้อมเรียนรู้วิถีชีวิตผู้คนริมชายฝั่งอ่าวไทย และนิทรรศการผลงานวิจัยเด่นเพื่อความยั่งยืนของทรัพยากรทางทะเล</p>
+                    <div class="facts">
+                        <div class="fact"><b>ระบบนิเวศ</b><span>ป่าชายหาดและป่าชายเลน</span></div>
+                        <div class="fact"><b>วิถีชีวิต</b><span>ชุมชนริมชายฝั่งอ่าวไทย</span></div>
+                        <div class="fact"><b>งานวิจัย</b><span>ปูม้ายั่งยืนและสัตว์ทะเล</span></div>
+                    </div>
+                </div>
+                <div class="room-image"></div>
+            </div>
+        </section>
+        <section class="story" id="story">
+            <div class="container story-inner">
+                <div class="divider"></div>
+                <p class="section-label">Earth Memory</p>
+                <h2>ชายฝั่งอุดมสมบูรณ์ และ ระบบนิเวศและวิถีชีวิต</h2>
+                <p>สำรวจความหลากหลายทางชีวภาพของป่าชายหาดและป่าชายเลน 
+                    สัมผัสวิถีชีวิตชุมชนอ่าวไทย พร้อมเรียนรู้งานวิจัยเพื่อความยั่งยืนของทรัพยากรทางทะเล</p>
+                <div class="timeline">
+                    <div class="timeline-item"><b>สำรวจ</b><span>ระบบนิเวศป่าชายหาดและป่าชายเลน</span></div>
+                    <div class="timeline-item"><b>เรียนรู้</b><span>วิถีชีวิตผู้คนริมชายฝั่งอ่าวไทย</span></div>
+                    <div class="timeline-item"><b>ยั่งยืน</b><span>งานวิจัยสัตว์ทะเลและปูม้าคู่อ่าวไทย</span></div>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="container">
+                <h2>ออกเดินทางสู่โซนจัดแสดงอื่น</h2>
+                <p>เรื่องราวธรรมชาติวิทยาของภาคใต้ยังรอให้คุณค้นพบ</p>
+                <div class="page-nav"><a href="zone-05.html">← โซนก่อนหน้า</a><a
+                        href="Sirinmuseum.html#zones">โซนทั้งหมด</a><a href="zone-07.html">โซนถัดไป →</a></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">© 2026 SIRIN Museum, Walailak University.</div>
+    </footer>
+    <script>const menu = document.querySelector('.menu'); document.querySelector('.burger').onclick = () => menu.classList.toggle('open'); menu.querySelectorAll('a').forEach(a => a.onclick = () => menu.classList.remove('open'));</script>
+</body>
+
+</html>

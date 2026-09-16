@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ศักยภาพมากล้นมีให้เห็น | SIRIN Museum</title>
+    <link rel="stylesheet" href="zone-page.css">
+    <style>
+        :root {
+            --hero-image: url('zone4thumbnail.jpg');
+            --room-image: url('zone4.jpg')
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav"><a href="Sirinmuseum.html" class="logo">
+                <div class="logo-mark"><img src="SirinLogo.png" alt="SIRIN Museum"></div>
+                <div><b>SIRIN MUSEUM</b><span>พิพิธภัณฑ์ธรรมชาติวิทยาเทพรัตนราชสุดาฯ</span></div>
+            </a>
+            <ul class="menu">
+                <li><a href="Sirinmuseum.html#about">เกี่ยวกับเรา</a></li>
+                <li><a href="Sirinmuseum.html#zones">โซนจัดแสดง</a></li>
+                <li><a href="Sirinmuseum.html#visit">ข้อมูลเข้าชม</a></li>
+                <li><a href="Sirinmuseum.html#contact">ติดต่อ</a></li>
+            </ul><button class="burger">☰</button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-inner"><span class="hero-no">04</span>
+                <p class="eyebrow">Exhibition Room · SIRIN Museum</p>
+                <h1>ศักยภาพมากล้นมีให้เห็น</h1>
+                <p>ผลงานวิจัยและงานสนองพระราชดำริ สู่การอนุรักษ์ พัฒนา และสร้างมูลค่าทรัพยากรอย่างยั่งยืน</p><a
+                    class="btn btn-primary" href="#story">สำรวจเรื่องราว</a>
+            </div>
+        </section>
+        <section class="intro">
+            <div class="container intro-grid">
+                <div>
+                    <p class="section-label">Research & Innovation</p>
+                    <h2>เปลี่ยนองค์ความรู้ให้เกิดคุณค่า</h2>
+                    <p>นำเสนอศักยภาพของงานวิจัยและงานสนองพระราชดำริที่ช่วยอนุรักษ์ พัฒนา
+                        และสร้างมูลค่าให้ทรัพยากรธรรมชาติ</p>
+                    <p>เรียนรู้การต่อยอดองค์ความรู้สู่การใช้ประโยชน์อย่างรับผิดชอบ โดยคำนึงถึงสมดุลระหว่างเศรษฐกิจ สังคม
+                        และสิ่งแวดล้อม</p>
+                    <div class="facts">
+                        <div class="fact"><b>วิจัย</b><span>สร้างองค์ความรู้</span></div>
+                        <div class="fact"><b>พัฒนา</b><span>ต่อยอดทรัพยากร</span></div>
+                        <div class="fact"><b>ยั่งยืน</b><span>เป้าหมายร่วม</span></div>
+                    </div>
+                </div>
+                <div class="room-image"></div>
+            </div>
+        </section>
+        <section class="story" id="story">
+            <div class="container story-inner">
+                <div class="divider"></div>
+                <p class="section-label">From Knowledge to Value</p>
+                <h2>นวัตกรรมที่เติบโตไปพร้อมธรรมชาติ</h2>
+                <p>งานวิจัยที่ดีสามารถกลายเป็นทางเลือกใหม่ในการดูแลทรัพยากรและยกระดับคุณภาพชีวิต</p>
+                <div class="timeline">
+                    <div class="timeline-item"><b>ค้นคว้า</b><span>ตั้งคำถามและเก็บข้อมูลจากธรรมชาติ</span></div>
+                    <div class="timeline-item"><b>ต่อยอด</b><span>พัฒนาความรู้เป็นแนวทางใช้ประโยชน์</span></div>
+                    <div class="timeline-item"><b>สร้างคุณค่า</b><span>เติบโตโดยไม่ทำลายธรรมชาติ</span></div>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="container">
+                <h2>ออกเดินทางสู่โซนจัดแสดงอื่น</h2>
+                <p>เรื่องราวธรรมชาติวิทยาของภาคใต้ยังรอให้คุณค้นพบ</p>
+                <div class="page-nav"><a href="zone-03.html">← โซนก่อนหน้า</a><a
+                        href="Sirinmuseum.html#zones">โซนทั้งหมด</a><a href="zone-05.html">โซนถัดไป →</a></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">© 2026 SIRIN Museum, Walailak University.</div>
+    </footer>
+    <script>const menu = document.querySelector('.menu'); document.querySelector('.burger').onclick = () => menu.classList.toggle('open'); menu.querySelectorAll('a').forEach(a => a.onclick = () => menu.classList.remove('open'));</script>
+</body>
+
+</html>

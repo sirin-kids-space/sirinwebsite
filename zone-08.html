@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ประโยชน์แท้แก่มหาชน | SIRIN Museum</title>
+    <link rel="stylesheet" href="zone-page.css">
+    <style>
+        :root {
+            --hero-image: url('https://rspg.payap.ac.th/home/slide.php?img=slide_220230508034931.png');
+            --room-image: url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200')
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav"><a href="Sirinmuseum.html" class="logo">
+                <div class="logo-mark"><img src="SirinLogo.png" alt="SIRIN Museum"></div>
+                <div><b>SIRIN MUSEUM</b><span>พิพิธภัณฑ์ธรรมชาติวิทยาเทพรัตนราชสุดาฯ</span></div>
+            </a>
+            <ul class="menu">
+                <li><a href="Sirinmuseum.html#about">เกี่ยวกับเรา</a></li>
+                <li><a href="Sirinmuseum.html#zones">โซนจัดแสดง</a></li>
+                <li><a href="Sirinmuseum.html#visit">ข้อมูลเข้าชม</a></li>
+                <li><a href="Sirinmuseum.html#contact">ติดต่อ</a></li>
+            </ul><button class="burger">☰</button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-inner"><span class="hero-no">08</span>
+                <p class="eyebrow">Exhibition Room · SIRIN Museum</p>
+                <h1>ประโยชน์แท้แก่มหาชน</h1>
+                <p>พระราชกรณียกิจด้านการอนุรักษ์ทรัพยากรธรรมชาติ และโครงการ อพ.สธ.</p><a class="btn btn-primary"
+                    href="#story">สำรวจเรื่องราว</a>
+            </div>
+        </section>
+        <section class="intro">
+            <div class="container intro-grid">
+                <div>
+                    <p class="section-label">For the People</p>
+                    <h2>อนุรักษ์เพื่อประโยชน์ของมหาชน</h2>
+                    <p>ทบทวนภาพรวมของพระราชกรณียกิจด้านการอนุรักษ์ทรัพยากรธรรมชาติ
+                        และผลลัพธ์ที่เกิดขึ้นกับประชาชนและชุมชน</p>
+                    <p>การอนุรักษ์ไม่ใช่หน้าที่ของคนกลุ่มใดกลุ่มหนึ่ง
+                        แต่เป็นพลังร่วมที่ทุกคนเริ่มต้นได้จากการเห็นคุณค่าและลงมือทำ</p>
+                    <div class="facts">
+                        <div class="fact"><b>มหาชน</b><span>ประโยชน์ร่วม</span></div>
+                        <div class="fact"><b>อพ.สธ.</b><span>ภารกิจต่อเนื่อง</span></div>
+                        <div class="fact"><b>อนาคต</b><span>ความรับผิดชอบของเรา</span></div>
+                    </div>
+                </div>
+                <div class="room-image"></div>
+            </div>
+        </section>
+        <section class="story" id="story">
+            <div class="container story-inner">
+                <div class="divider"></div>
+                <p class="section-label">Our Shared Future</p>
+                <h2>ความยั่งยืนเริ่มต้นจากการลงมือร่วมกัน</h2>
+                <p>เมื่อความรู้กลายเป็นความเข้าใจ และความเข้าใจนำไปสู่การลงมือทำ
+                    การอนุรักษ์จะส่งต่อประโยชน์ให้คนรุ่นต่อไป</p>
+                <div class="timeline">
+                    <div class="timeline-item"><b>เข้าใจ</b><span>มองเห็นคุณค่าของทรัพยากร</span></div>
+                    <div class="timeline-item"><b>ร่วมมือ</b><span>รวมพลังจากคนและชุมชน</span></div>
+                    <div class="timeline-item"><b>ส่งต่อ</b><span>สร้างอนาคตที่ธรรมชาติอยู่คู่มหาชน</span></div>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="container">
+                <h2>เดินทางครบทั้ง 8 โซนแล้ว</h2>
+                <p>ขอบคุณที่ร่วมเรียนรู้เรื่องราวธรรมชาติวิทยาของภาคใต้</p>
+                <div class="page-nav"><a href="zone-07.html">← โซนก่อนหน้า</a><a
+                        href="Sirinmuseum.html#zones">กลับไปหน้าหลัก</a></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">© 2026 SIRIN Museum, Walailak University.</div>
+    </footer>
+    <script>const menu = document.querySelector('.menu'); document.querySelector('.burger').onclick = () => menu.classList.toggle('open'); menu.querySelectorAll('a').forEach(a => a.onclick = () => menu.classList.remove('open'));</script>
+</body>
+
+</html>

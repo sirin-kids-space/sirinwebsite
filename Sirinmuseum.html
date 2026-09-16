@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIRIN Museum | พิพิธภัณฑ์ธรรมชาติวิทยาเทพรัตนราชสุดาฯ ม.วลัยลักษณ์</title>
+<meta name="description" content="พิพิธภัณฑ์ธรรมชาติวิทยาเทพรัตนราชสุดาฯ มหาวิทยาลัยวลัยลักษณ์ แหล่งเรียนรู้ธรรมชาติวิทยาที่ใหญ่ที่สุดในภาคใต้ ตามรอยเจ้าฟ้านักอนุรักษ์ จากยอดเขาสู่ใต้ทะเล">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green-900:#0b3d2e; --green-700:#14614a; --green-500:#1f8a68;
+  --gold:#c9a227; --sand:#f6f3ea; --ink:#1a1a1a; --muted:#5f6b66;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Prompt',sans-serif;color:var(--ink);background:#fff;line-height:1.75}
+img{max-width:100%;display:block}
+.container{width:min(1180px,92%);margin-inline:auto}
+
+/* ---------- NAVBAR ---------- */
+header{position:fixed;inset:0 0 auto 0;z-index:100;transition:.35s;padding:18px 0}
+header.scrolled{background:rgba(11,61,46,.96);backdrop-filter:blur(10px);padding:10px 0;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none}
+.logo-img{width:44px;height:44px;}
+.logo b{font-size:1.05rem;letter-spacing:.5px;display:block}
+.logo span{font-size:.72rem;opacity:.8;font-weight:300}
+.menu{display:flex;gap:28px;list-style:none}
+.menu a{color:#fff;text-decoration:none;font-size:.93rem;font-weight:400;position:relative;padding-bottom:4px}
+.menu a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold);transition:.3s}
+.menu a:hover::after{width:100%}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.6rem;cursor:pointer}
+
+/* ---------- HERO ---------- */
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;color:#fff;position:relative;
+  background:linear-gradient(rgba(6,40,30,.62),rgba(6,40,30,.78)),
+  url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBEgYyJTKUAgJTXOaJCZZkZlNqhsOJdxl-El2pusY4TB8GuYVy7o8TB5E&s=10') center/cover fixed}
+.hero-inner{max-width:900px;padding:0 20px}
+.eyebrow{letter-spacing:5px;font-size:.78rem;color:var(--gold);text-transform:uppercase;margin-bottom:22px}
+.hero h1{font-size:clamp(2rem,5.2vw,3.7rem);font-weight:600;line-height:1.3;margin-bottom:8px}
+.hero h2{font-family:'Playfair Display',serif;font-size:clamp(1.1rem,2.4vw,1.7rem);font-weight:600;color:var(--gold);margin-bottom:22px;letter-spacing:2px}
+.hero p{font-weight:300;font-size:clamp(.95rem,1.6vw,1.12rem);opacity:.92;margin-bottom:36px}
+.btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{padding:13px 32px;border-radius:40px;text-decoration:none;font-size:.93rem;font-weight:500;transition:.3s;display:inline-block}
+.btn-primary{background:var(--gold);color:var(--green-900)}
+.btn-primary:hover{background:#e0b930;transform:translateY(-3px)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--green-900)}
+.scroll-cue{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);animation:bob 2s infinite}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,10px)}}
+
+/* ---------- SECTION ---------- */
+section{padding:96px 0}
+.sec-head{text-align:center;max-width:760px;margin:0 auto 56px}
+.sec-head .kicker{color:var(--green-500);letter-spacing:3px;font-size:.76rem;text-transform:uppercase;font-weight:500}
+.sec-head h3{font-size:clamp(1.6rem,3.4vw,2.4rem);font-weight:600;color:var(--green-900);margin:10px 0 14px}
+.sec-head p{color:var(--muted);font-weight:300}
+.divider{width:56px;height:3px;background:var(--gold);margin:0 auto 18px;border-radius:2px}
+
+/* ---------- ABOUT ---------- */
+.about{background:var(--sand)}
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.about-txt h4{color:var(--green-700);font-size:1.25rem;margin-bottom:14px;font-weight:600}
+.about-txt p{color:var(--muted);margin-bottom:16px;font-weight:300}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:26px}
+.fact{background:#fff;padding:20px;border-radius:14px;border-left:4px solid var(--gold)}
+.fact b{display:block;font-size:1.6rem;color:var(--green-900);font-weight:700}
+.fact span{font-size:.82rem;color:var(--muted)}
+.about-img{border-radius:20px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.16);aspect-ratio:4/5;
+  background:url('https://blog.wu.ac.th/wp-content/uploads/2022/10/Master-Plan2.jpg') center/cover}
+
+/* ---------- ZONES ---------- */
+.zones{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:26px}
+.zone{border-radius:18px;overflow:hidden;position:relative;min-height:300px;color:#fff;
+  display:flex;align-items:flex-end;padding:26px;transition:.4s;cursor:pointer}
+.zone::before{content:'';position:absolute;inset:0;background:linear-gradient(transparent 25%,rgba(6,40,30,.92));z-index:1}
+.zone-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:.6s}
+.zone:hover .zone-bg{transform:scale(1.09)}
+.zone:hover{box-shadow:0 20px 44px rgba(0,0,0,.24);transform:translateY(-6px)}
+.zone-body{position:relative;z-index:2}
+.zone-no{font-family:'Playfair Display',serif;color:var(--gold);font-size:1.5rem;display:block}
+.zone h5{font-size:1.14rem;font-weight:600;margin:4px 0 6px}
+.zone p{font-size:.85rem;font-weight:300;opacity:.9}
+
+/* ---------- VISIT ---------- */
+.visit{background:var(--green-900);color:#fff}
+.visit .sec-head h3{color:#fff}
+.visit .sec-head p{color:rgba(255,255,255,.72)}
+.visit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:28px;transition:.3s}
+.card:hover{background:rgba(255,255,255,.12);transform:translateY(-5px)}
+.card .ic{font-size:1.8rem;margin-bottom:12px}
+.card h5{color:var(--gold);font-size:1.02rem;margin-bottom:10px;font-weight:600}
+.card p,.card li{font-size:.88rem;font-weight:300;color:rgba(255,255,255,.85)}
+.card ul{list-style:none}
+.card li{padding:5px 0;border-bottom:1px dashed rgba(255,255,255,.14);display:flex;justify-content:space-between;gap:10px}
+.card li:last-child{border:0}
+
+/* ---------- CONTACT ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.info-item{display:flex;gap:16px;margin-bottom:22px}
+.info-item .ic{width:44px;height:44px;flex:none;border-radius:12px;background:var(--sand);display:grid;place-items:center;font-size:1.2rem}
+.info-item b{display:block;color:var(--green-900);font-size:.95rem}
+.info-item span{color:var(--muted);font-size:.88rem;font-weight:300}
+form{background:var(--sand);padding:30px;border-radius:18px}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:.84rem;margin-bottom:6px;color:var(--green-900);font-weight:500}
+.field input,.field textarea,.field select{width:100%;padding:12px 14px;border:1px solid #dcd8cb;border-radius:10px;
+  font-family:inherit;font-size:.9rem;background:#fff;outline:none;transition:.25s}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--green-500);box-shadow:0 0 0 3px rgba(31,138,104,.13)}
+form button{width:100%;padding:14px;border:0;border-radius:10px;background:var(--green-700);color:#fff;
+  font-family:inherit;font-size:.95rem;font-weight:500;cursor:pointer;transition:.3s}
+form button:hover{background:var(--green-900)}
+.form-msg{margin-top:12px;font-size:.86rem;color:var(--green-700);display:none}
+
+/* ---------- FOOTER ---------- */
+footer{background:#082a20;color:rgba(255,255,255,.72);padding:56px 0 24px;font-size:.87rem;font-weight:300}
+.f-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:36px;margin-bottom:32px}
+footer h6{color:#fff;font-size:.98rem;margin-bottom:14px;font-weight:600}
+footer a{color:rgba(255,255,255,.72);text-decoration:none;display:block;padding:4px 0}
+footer a:hover{color:var(--gold)}
+.f-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;text-align:center;font-size:.8rem;opacity:.65}
+
+/* ---------- ANIMATION ---------- */
+.reveal{opacity:0;transform:translateY(34px);transition:.8s cubic-bezier(.2,.7,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:900px){
+  .about-grid,.contact-grid,.f-grid{grid-template-columns:1fr}
+  .about-img{aspect-ratio:16/10}
+  .burger{display:block}
+  .menu{position:fixed;inset:0 0 0 auto;width:78%;max-width:320px;background:var(--green-900);
+    flex-direction:column;justify-content:center;gap:26px;padding:40px;transform:translateX(100%);transition:.4s}
+  .menu.open{transform:none}
+  .menu a{font-size:1.08rem}
+  section{padding:70px 0}
+}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="container nav">
+    <a href="#home" class="logo">
+      <div style="width: 68px; height: 58px; background: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0;">
+  <img src="SirinLogo.png" alt="Logo" style="width: 100%; height: 100%; object-fit: contain; transform: scale(1.5);">
+</div>
+      <div><b>SIRIN MUSEUM</b><span>พิพิธภัณฑ์ธรรมชาติวิทยาเทพรัตนราชสุดาฯ</span></div>
+    </a>
+    <ul class="menu" id="menu">
+      <li><a href="#about">เกี่ยวกับเรา</a></li>
+      <li><a href="#zones">โซนจัดแสดง</a></li>
+      <li><a href="#visit">ข้อมูลเข้าชม</a></li>
+      <li><a href="#contact">ติดต่อ</a></li>                                          
+    </ul>
+    <button class="burger" id="burger">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <p class="eyebrow">Walailak University · Nakhon Si Thammarat</p>
+    <h1>พิพิธภัณฑ์ธรรมชาติวิทยา<br>เทพรัตนราชสุดาฯ</h1>
+    <h2>SIRIN MUSEUM</h2>
+    <p>“ตามรอยเจ้าฟ้านักอนุรักษ์ จากยอดเขาสู่ใต้ทะเล”<br>
+       แหล่งเรียนรู้ธรรมชาติวิทยาที่ใหญ่ที่สุดในภาคใต้ ณ อุทยานพฤกษศาสตร์ มหาวิทยาลัยวลัยลักษณ์</p>
+    <div class="btns">
+      <a href="#visit" class="btn btn-primary">วางแผนเข้าชม</a>
+      <a href="#zones" class="btn btn-ghost">สำรวจ 8 โซนจัดแสดง</a>
+    </div>
+  </div>
+  <div class="scroll-cue">⌄</div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="divider"></div>
+      <p class="kicker">About Us</p>
+      <h3>เกี่ยวกับพิพิธภัณฑ์</h3>
+      <p>สนองพระราชดำริโครงการอนุรักษ์พันธุกรรมพืชอันเนื่องมาจากพระราชดำริฯ (อพ.สธ.)</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-txt reveal">
+        <h4>อาคารรูปเลข ๘ — สัญลักษณ์แห่งความยั่งยืน</h4>
+        <p>พิพิธภัณฑ์ธรรมชาติวิทยาเทพรัตนราชสุดาฯ มหาวิทยาลัยวลัยลักษณ์ ได้รับพระราชทานนามจาก
+           สมเด็จพระกนิษฐาธิราชเจ้า กรมสมเด็จพระเทพรัตนราชสุดาฯ สยามบรมราชกุมารี
+           เมื่อวันที่ 27 สิงหาคม 2564 และเปิดตัวอย่างเป็นทางการในรูปแบบ Soft Opening
+           เมื่อวันที่ 18 ธันวาคม 2568</p>
+        <p>ตัวอาคารออกแบบเป็นรูปเลข <b>8</b> ซึ่งเมื่อวางตะแคงจะกลายเป็นสัญลักษณ์ Infinity (∞)
+           สื่อความหมายถึงความต่อเนื่องและยั่งยืนในการอนุรักษ์ทรัพยากรธรรมชาติและสิ่งแวดล้อม
+           ตั้งอยู่ริมอ่างเก็บน้ำภายในอุทยานพฤกษศาสตร์ โดยมีทิวเทือกเขาหลวงเป็นฉากหลัง</p>
+        <p>ภายในรวบรวมองค์ความรู้ด้านทรัพยากรธรรมชาติ ความหลากหลายทางชีวภาพ
+           และวัฒนธรรมภูมิปัญญาของภาคใต้ ผ่านนิทรรศการแบบ Interactive ที่เรียนรู้ได้ทุกเพศทุกวัย</p>
+
+        <div class="facts">
+          <div class="fact"><b>350+</b><span>ล้านบาท งบประมาณก่อสร้าง</span></div>
+          <div class="fact"><b>8</b><span>ห้องนิทรรศการหลัก</span></div>
+          <div class="fact"><b>2568</b><span>ปีที่เปิดให้บริการ</span></div>
+          <div class="fact"><b>#1</b><span>ใหญ่ที่สุดในภาคใต้</span></div>
+        </div>
+      </div>
+      <div class="about-img reveal"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ZONES -->
+<section id="zones">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="divider"></div>
+      <p class="kicker">Exhibitions</p>
+      <h3>โซนจัดแสดงนิทรรศการ</h3>
+      <p>เดินทางจากยอดเขาหลวงสู่ท้องทะเลอ่าวไทย ผ่านเรื่องราวธรรมชาติวิทยาของภาคใต้</p>
+    </div>
+
+    <div class="zones" id="zoneGrid"></div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="visit" id="visit">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="divider"></div>
+      <p class="kicker">Plan Your Visit</p>
+      <h3>ข้อมูลสำหรับผู้เข้าชม</h3>
+      <p>โปรดตรวจสอบวันเวลาเปิดทำการล่าสุดจากเพจทางการก่อนเดินทาง</p>
+    </div>
+
+    <div class="visit-grid">
+      <div class="card reveal">
+        <div class="ic">🕐</div>
+        <h5>เวลาทำการ</h5>
+        <ul>
+          <li><span>อังคาร – อาทิตย์</span><span>09.00–16.00</span></li>
+          <li><span>จันทร์</span><span>ปิดทำการ</span></li>
+          <li><span>วันหยุดนักขัตฤกษ์</span><span>โปรดตรวจสอบ</span></li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <div class="ic">🎟️</div>
+        <h5>ค่าเข้าชม</h5>
+        <ul>
+          <li><span>นักเรียน / นักศึกษา</span><span>40 บาท / คน</span></li>
+          <li><span>บุคคลทั่วไป</span><span>60 บาท / คน</span></li>
+          <li><span>หมู่คณะ / โรงเรียน</span><span>จองล่วงหน้า</span></li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <div class="ic">🚗</div>
+        <h5>การเดินทาง</h5>
+        <p>อุทยานพฤกษศาสตร์ ม.วลัยลักษณ์ อ.ท่าศาลา จ.นครศรีธรรมราช<br>
+           ห่างจากตัวเมืองนครศรีธรรมราชประมาณ 40 กม. มีลานจอดรถรองรับ</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic">📋</div>
+        <h5>ข้อควรทราบ</h5>
+        <p>• งดสัมผัสวัตถุจัดแสดง<br>
+           • ถ่ายภาพได้ แต่งดใช้แฟลช<br>
+           • งดนำอาหารและเครื่องดื่มเข้าห้องนิทรรศการ<br>
+           • มีทางลาดรองรับรถเข็น</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="divider"></div>
+      <p class="kicker">Contact</p>
+      <h3>ติดต่อ & จองเข้าชมหมู่คณะ</h3>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="info-item"><div class="ic">📍</div>
+          <div><b>ที่อยู่</b><span>พิพิธภัณฑ์ธรรมชาติวิทยาเทพรัตนราชสุดาฯ อุทยานพฤกษศาสตร์ มหาวิทยาลัยวลัยลักษณ์ 222 ต.ไทยบุรี อ.ท่าศาลา จ.นครศรีธรรมราช 80160</span></div></div>
+        <div class="info-item"><div class="ic">📞</div>
+          <div><b>โทรศัพท์</b><span>075-673-000 (มหาวิทยาลัยวลัยลักษณ์)</span></div></div>
+        <div class="info-item"><div class="ic">✉️</div>
+          <div><b>อีเมล</b><span>botany@wu.ac.th</span></div></div>
+        <div class="info-item"><div class="ic">🌐</div>
+          <div><b>ออนไลน์</b><span>Facebook: SIRIN.Museum · เว็บไซต์: botany.wu.ac.th</span></div></div>
+
+        <iframe style="width:100%;height:260px;border:0;border-radius:16px;margin-top:12px"
+          loading="lazy" allowfullscreen
+          src="https://maps.google.com/maps?q=Walailak%20University%20Botanic%20Park&t=&z=14&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+
+      <form id="bookForm" class="reveal">
+        <div class="field"><label>ชื่อ-นามสกุล / หน่วยงาน</label><input type="text" required placeholder="เช่น โรงเรียนเบญจมราชูทิศ"></div>
+        <div class="field"><label>อีเมล</label><input type="email" required placeholder="you@example.com"></div>
+        <div class="field"><label>เบอร์โทรศัพท์</label><input type="tel" required placeholder="08X-XXX-XXXX"></div>
+        <div class="field"><label>ประเภทการเข้าชม</label>
+          <select><option>เข้าชมทั่วไป</option><option>หมู่คณะ / สถานศึกษา</option><option>ขอวิทยากรนำชม</option><option>สื่อมวลชน / ถ่ายทำ</option></select>
+        </div>
+        <div class="field"><label>รายละเอียดเพิ่มเติม</label><textarea rows="4" placeholder="วันที่ต้องการเข้าชม จำนวนผู้เข้าชม ฯลฯ"></textarea></div>
+        <button type="submit">ส่งคำขอ</button>
+        <p class="form-msg" id="msg">✅ ส่งคำขอเรียบร้อยแล้ว เจ้าหน้าที่จะติดต่อกลับภายใน 3 วันทำการ</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="f-grid">
+      <div>
+        <h6>SIRIN MUSEUM</h6>
+        <p>พิพิธภัณฑ์ธรรมชาติวิทยาเทพรัตนราชสุดาฯ มหาวิทยาลัยวลัยลักษณ์<br>
+           แหล่งเรียนรู้ธรรมชาติวิทยาและความหลากหลายทางชีวภาพของภาคใต้
+           ภายใต้โครงการ อพ.สธ.</p>
+      </div>
+      <div>
+        <h6>เมนูลัด</h6>
+        <a href="#about">เกี่ยวกับเรา</a><a href="#zones">โซนจัดแสดง</a>
+        <a href="#visit">ข้อมูลเข้าชม</a><a href="#contact">ติดต่อเรา</a>
+      </div>
+      <div>
+        <h6>ลิงก์ที่เกี่ยวข้อง</h6>
+        <a href="https://www.wu.ac.th" target="_blank">มหาวิทยาลัยวลัยลักษณ์</a>
+        <a href="https://botany.wu.ac.th" target="_blank">อุทยานพฤกษศาสตร์ มวล.</a>
+        <a href="https://www.facebook.com/SIRIN.Museum/" target="_blank">Facebook Page</a>
+      </div>
+    </div>
+    <div class="f-bottom">© 2026 SIRIN Museum, Walailak University. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+/* ----- ข้อมูล 8 โซน (แก้ไขได้ที่นี่จุดเดียว) ----- */
+const zones = [
+ {n:'01',t:'ห้องเกริกไกรเจ้าฟ้านักอนุรักษ์',d:'พระราชประวัติการก่อตั้ง อพ.สธ. เป้าหมายรวมและภารกิจ 30 ปี ',img:'https://static.thairath.co.th/media/Dtbezn3nNUxytg04aczJFZBxOh00IOqDMJevNjMNI5WbY8.jpg'},
+ {n:'02',t:'หวนดูทรัพย์สิ่งสินตน',d:' จัดแสดงเนื้อหาเกี่ยวกับทรัพยากรถิ่นใต้ งานวิจัย และงานสนองพระราชดำริ อาทิ งานฐานข้อมูลทรัพยากร  ศิลปะวัฒนธรรม ภูมิปัญญา',img:'https://www.sarakadeelite.com/wp-content/uploads/2022/07/krungching1.jpg'},
+ {n:'03',t:'เขาหลวงทรัพยากรมากมี',d:'มุ่งเน้นทรัพยากรในพื้นที่เทือกเขาหลวง เพื่อให้จัดแสดงให้เห็นความหลากหลายทางชีวภาพ  การจัดแสดงแบบจาลองน้ำตกกรุงชิง การจำลองตัวอย่างพืชและสัตว์ที่พบในเขาหลวง',img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5JqPkSVENZcxdj8MI2q9IY33cZ2enj4vZNusj0RWhqVmVEfztmf3veWNh&s=10'},
+ {n:'04',t:'ศักยภาพมากล้นมีให้เห็น',d:'จัดแสดงผลงานวิจัยและงานสนองพระราชดำริฯ สู่การอนุรักษ์ พัฒนา และสร้างมูลค่าทรัพยากรอย่างยั่งยืน',img:'https://clib.psu.ac.th/southerninfo/storages/album/5-eb8d6420-322f71ea-%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%96%E0%B8%A1%E0%B8%99%E0%B8%84%E0%B8%A3_(%E0%B8%97%E0%B8%AD%E0%B8%87)5.png'},
+ {n:'05',t:'ทรัพยากรลุ่มน้ำปากพนัง',d:'ความสัมพันธ์ของสายน้ำ พื้นที่ชุ่มน้ำ และทรัพยากรในลุ่มน้ำปากพนัง',img:'https://image.makewebcdn.com/makeweb/m_1920x0/pMrtkmxgt/PakPhanang/%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%9E%E0%B8%99%E0%B8%B1%E0%B8%873.jpg'},
+ {n:'06',t:'ชายฝั่งอุดมสมบูรณ์',d:'จากวิถีชายฝั่งสู่งานวิจัยเพื่อความยั่งยืน',img:'https://aowtakiabseafood.com/wp-content/uploads/2019/02/mangrove-forest-001.jpg'},
+ {n:'07',t:'บริบูรณ์ทรัพยากรอ่าวไทย',d:'สำรวจสิ่งมีชีวิตใต้ท้องทะเล โครงกระดูกวาฬ และผลงานวิจัยเพื่อการอนุรักษ์ทรัพยากรอ่าวไทยอย่างยั่งยืน',img:'https://img.kapook.com/u/2015/suppaporn/sea023.jpg'},
+ {n:'08',t:'ประโยชน์แท้แก่มหาชน',d:'พระราชกรณียกิจด้านการอนุรักษ์ทรัพยากรธรรมชาติ และโครงการ อพ.สธ.',img:'https://botany.wu.ac.th/wp-content/uploads/2019/07/%E0%B8%AD%E0%B8%9E.%E0%B8%AA%E0%B8%98-1024x569.jpg'}
+];
+document.getElementById('zoneGrid').innerHTML = zones.map(z=>`
+ <a class="zone-link" href="zone-${z.n}.html">
+   <article class="zone reveal">
+      <div class="zone-bg" style="background-image:url('${z.img}')"></div>
+     <div class="zone-body">
+       <span class="zone-no">${z.n}</span>
+       <h5>${z.t}</h5><p>${z.d}</p>
+     </div>
+   </article>
+ </a>`).join('');
+
+/* ----- Navbar ----- */
+const hdr=document.getElementById('hdr');
+addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>60));
+
+/* ----- Mobile menu ----- */
+const menu=document.getElementById('menu');
+document.getElementById('burger').onclick=()=>menu.classList.toggle('open');
+menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+
+/* ----- Scroll reveal ----- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}
+}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ----- Form ----- */
+document.getElementById('bookForm').onsubmit=e=>{
+  e.preventDefault();
+  document.getElementById('msg').style.display='block';
+  e.target.reset();
+};
+</script>
+</body>
+</html>

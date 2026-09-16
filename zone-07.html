@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>บริบูรณ์ทรัพยากรอ่าวไทย | SIRIN Museum</title>
+    <link rel="stylesheet" href="zone-page.css">
+    <style>
+        :root {
+            --hero-image: url('zone7thumbnail.jpg');
+            --room-image: url('zone7.jpg')
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav"><a href="Sirinmuseum.html" class="logo">
+                <div class="logo-mark"><img src="SirinLogo.png" alt="SIRIN Museum"></div>
+                <div><b>SIRIN MUSEUM</b><span>พิพิธภัณฑ์ธรรมชาติวิทยาเทพรัตนราชสุดาฯ</span></div>
+            </a>
+            <ul class="menu">
+                <li><a href="Sirinmuseum.html#about">เกี่ยวกับเรา</a></li>
+                <li><a href="Sirinmuseum.html#zones">โซนจัดแสดง</a></li>
+                <li><a href="Sirinmuseum.html#visit">ข้อมูลเข้าชม</a></li>
+                <li><a href="Sirinmuseum.html#contact">ติดต่อ</a></li>
+            </ul><button class="burger">☰</button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-inner"><span class="hero-no">07</span>
+                <p class="eyebrow">Exhibition Room · SIRIN Museum</p>
+                <h1>บริบูรณ์ทรัพยากรอ่าวไทย</h1>
+                <p>สำรวจสิ่งมีชีวิตใต้ท้องทะเล โครงกระดูกวาฬ และผลงานวิจัยเพื่อการอนุรักษ์ทรัพยากรอ่าวไทยอย่างยั่งยืน</p><a class="btn btn-primary"
+                    href="#story">สำรวจเรื่องราว</a>
+            </div>
+        </section>
+        <section class="intro">
+            <div class="container intro-grid">
+                <div>
+                    <p class="section-label">Gulf of Thailand</p>
+                    <h2>บริบูรณ์ทรัพยากรอ่าวไทย</h2>
+                    <p>จัดแสดงสัตว์น้ำและโครงกระดูกวาฬขนาดใหญ่ที่สะท้อนความสมบูรณ์ของอ่าวไทย 
+                
+                    <p>พร้อมเรียนรู้ผลงานวิจัยเพื่อการอนุรักษ์ เช่น นิทรรศการธนาคารปลิงทะเล
+                         เพื่อการใช้ประโยชน์จากทรัพยากรทางทะเลอย่างยั่งยืน</p>
+                    <div class="facts">
+                        <div class="fact"><b>อ่าวไทย</b><span>ระบบนิเวศสำคัญ</span></div>
+                        <div class="fact"><b>วาฬบรูด้า</b><span>สัญลักษณ์แห่งความอุดมสมบูรณ์</span></div>
+                        <div class="fact"><b>งานวิจัย</b><span>การอนุรักษ์อย่างยั่งยืน/span></div>
+                    </div>
+                </div>
+                <div class="room-image"></div>
+            </div>
+        </section>
+        <section class="story" id="story">
+            <div class="container story-inner">
+                <div class="divider"></div>
+                <p class="section-label">Coastal Ways of Life</p>
+                <h2>ทะเลอุดม คนอยู่ได้ ธรรมชาติอยู่รอด</h2>
+                <p>วิถีชีวิตชายฝั่งที่รู้จักปรับตัวและใช้ทรัพยากรอย่างพอดี คือรากฐานของความยั่งยืนในอ่าวไทย</p>
+                <div class="timeline">
+                    <div class="timeline-item"><b>ผูกพัน</b><span>เรียนรู้ความสัมพันธ์ของคนกับทะเล</span></div>
+                    <div class="timeline-item"><b>ใช้ประโยชน์</b><span>รู้จักพืชและทรัพยากรท้องถิ่น</span></div>
+                    <div class="timeline-item"><b>ดูแล</b><span>รักษาอ่าวไทยให้สมบูรณ์</span></div>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="container">
+                <h2>ออกเดินทางสู่โซนจัดแสดงอื่น</h2>
+                <p>เรื่องราวธรรมชาติวิทยาของภาคใต้ยังรอให้คุณค้นพบ</p>
+                <div class="page-nav"><a href="zone-06.html">← โซนก่อนหน้า</a><a
+                        href="Sirinmuseum.html#zones">โซนทั้งหมด</a><a href="zone-08.html">โซนถัดไป →</a></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">© 2026 SIRIN Museum, Walailak University.</div>
+    </footer>
+    <script>const menu = document.querySelector('.menu'); document.querySelector('.burger').onclick = () => menu.classList.toggle('open'); menu.querySelectorAll('a').forEach(a => a.onclick = () => menu.classList.remove('open'));</script>
+</body>
+
+</html>
